@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Главная страница</title>
+</head>
+<body>
+	<header>
+		<h1>Инстаграм</h1>
+		<img src="img/instag.jpg" alt="инстаграм" height="200" width="300">
+	</header><br>
+	<main>
+		<div>
+			<legend>Вход</legend>
+				<form method="post" action="feed.html">
+					<label for="email">Ваша почта: <input type="email" name="email" required placeholder="Введите ваш email" ></label><br>
+					<label for="password">Ваш пароль: <input type="password" name="password" required></label><br>
+					<input type="submit" name="submit" value="Отправить">
+					<input type="checkbox" name="yes" value="Запомнить">
+				</form>
+		</div>
+		<div><br>
+			<legend>Регистрация</legend>
+				<form method="post" action="feed.html"> 
+					<label for="name">Ваше имя: <input type="text" name="name" required placeholder="Введите ваше имя"></label><br>
+					<label for="email">Ваша почта: <input type="email" name="email" required placeholder="Введите ваш email" ></label><br>
+					<label for="password">Ваш пароль: <input type="password" name="password" required></label><br>
+					<label for="password">Подтверждение пароля: <input type="password" name="password" required></label><br>
+					<input type="submit" name="submit" value="Зарегистрироваться">
+					<label>Отметка о согласии с порядком обработки персональных данных: <input type="checkbox" name="agree" required></label>
+				</form>
+		</div>
+	</main>
+</body>
+</html>
