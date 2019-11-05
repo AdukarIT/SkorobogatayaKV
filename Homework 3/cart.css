@@ -1,0 +1,127 @@
+* {
+	font-family: 'Fira Sans', sans-serif;
+	color: blue;
+	text-decoration: none;
+}
+
+body {
+	background-image: url(fon.jpg);
+	background-attachment: fixed;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 60px;
+	text-align: center;	
+	color: #00FF00;
+
+	width: 100%;
+	height: 15%;
+	margin: 30px auto;
+	padding: 0;
+}
+
+.menu {
+	padding:40px;
+	margin: 40px;
+	position: relative;
+	text-align: center;
+}
+
+.menu__technology > li  {
+	margin: 10px 30px;
+	padding: 10px;
+	border: 2px solid #000;
+	text-transform: uppercase;
+	font-size: 20px;
+	width: 170px;
+
+	position: relative;
+	display: inline-block;
+}
+
+.menu__technology__item {
+	display: none;
+	position: absolute;
+
+	background-color: silver;
+	font-size: 15px;
+	margin: 20px;
+	padding-left: 0;
+	width: 130px;
+	border: 2px solid black;	
+	list-style-type: none;
+}
+
+.menu__technology__item > li{
+	padding-bottom: 10px;
+	margin: 0;
+}
+
+.menu__technology >li:hover .menu__technology__item {
+	display: block;
+	top: 0px;
+	left: 110px;
+	z-index: 2;
+
+}
+
+.menu__technology__item > li:hover {
+	background-color: white;
+}
+
+.basket {
+	width: 40px;
+	height: 40px;
+}
+
+footer {
+	margin: 20px;
+	font-size: 13px;
+}
+
+form {
+	margin-bottom: 50px;
+}
+
+.request {
+	text-align: center;
+	padding: 10px;
+}
+
+.delivery {
+	padding: 20px;
+	margin: 20px;
+}
+
+.map,
+.address {
+	display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.me:checked ~ .map {
+	display: block;
+}
+
+.car:checked ~ .address{
+	display: block;
+}
+
+
+.data {
+	padding: 10px;
+	text-align: center;
+}
+
+.comment {
+	text-align: left;
+	 width: 30%; 
+    height: 50px; 
+    resize: none;
+    margin-left: 20px;
+}
+
+
+

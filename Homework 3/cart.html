@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Магазин "Сила"</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet"  href="cart.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap&subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Интернет-магазин "Сила"</h1>
+	</header>
+
+	<main>
+	    <div class="menu">
+	    	 <ul class="menu__technology">
+
+	    	 	<li><a href="#">Бытовая техника</a>
+					<ul class="menu__technology__item">
+						<li><a href="#">Стиральные машины</a></li>
+						<li><a href="#">Пылесосы</a></li>
+						<li><a href="#">Швейные, вышивальные машины</a></li>
+						<li><a href="#">Утюги</a></li>
+						<li><a href="#">Электровеники</a></li>
+						<li><a href="#">Сушилки для обуви</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">Техника для кухни</a>
+					<ul class="menu__technology__item">
+						<li><a href="#">Холодильники</a></li>
+						<li><a href="#">Кухонные плиты</a></li>
+						<li><a href="#">Морозильнки</a></li>
+						<li><a href="#">Ростеры, мини-печи</a></li>
+						<li><a href="#">Настольные плиты</a></li>
+						<li><a href="#">Вытяжки</a></li>
+						<li><a href="#">Микроволновые печи</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">Компьютерная техника</a>	
+					<ul class="menu__technology__item"> 
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Планшеты</a></li>
+						<li><a href="#">Компьютеры, моноблоки</a></li>
+						<li><a href="#">Игровые приставки</a></li>
+						<li><a href="#">Серверное оборудование</a></li>
+
+					</ul>
+				</li>
+
+				<li>
+					<a href="#"><img class="basket" src="shop.png" alt="корзина" ></a>
+				</li>
+
+			</ul>
+
+		</div>
+
+		<form method="post" action="#">
+			<div class="request">
+
+				<div class="data">
+
+					 <p>Сделать заказ:</p>
+						<input type="text" name="name" required placeholder="Введите ваше имя"><br>
+						<input type="text" name="name" required placeholder="Введите вашу фамилию"><br>
+						<input type="email" name="email" required placeholder="Email"><br>
+						<input type="text" name="url" pattern="2[0-9]{3}-[0-9]{3}" required placeholder="Номер телефона"><br>
+						<input type="submit" name="submit" value="Отправить">
+
+				</div>
+
+				<div class="delivery">
+
+					<p>Способ доставки:</p>
+						<label>	<input type="checkbox" name="delivery" class="me" >
+						Самовывоз по адресу: ул.Корженевского 56
+							<iframe class="map" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;	q=%D0%A6%D1%8E%D1%80%D0%B8%D1%85+(Restaurant%20Sch%C3%B6nau)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" width="600" height="300"></iframe></label><br>
+
+						<input type="checkbox" name="delivery__car" class="car"><label>Курьером по Минску</label><br>
+						<input type="text" name="address" class="address" placeholder="Адрес доставки"><br>
+
+					   	<label>Я прочитал и согласен с условиями доставки<input type="checkbox" name="agree" required></label><br>
+						<label>Подтвердить заказ<input type="checkbox" name="agree"></label><br>
+						<input type="submit" name="submit" value="Отправить">
+
+
+	            </div>
+
+	                <div class="comment">
+	                    <p>Комментарии</p>
+	                    <textarea rows="3" cols="40" name="text" placeholder="Писать тут"></textarea>
+	                </div>
+			
+			</div>
+		</form>
+	</main>
+
+	<footer>
+		<div>
+			<p>Наше время работы: C 10:00 до 19:00 без выходных</p>
+			<p><a href="#">+37544*******</a></p>
+			<p>Адрес: ул.Казинца 1/2</p>
+			<p><a href="#"><img src="skype.png" alt="лого скайпа"></a></p>	
+		</div>
+	</footer>
+
+</body>
+</html>
+
+
+
