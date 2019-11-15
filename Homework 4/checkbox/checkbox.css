@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh
+}
+
+.input {
+  visibility: hidden;
+} 
+
+.main {
+  position: relative;
+  width: 100px;
+  height: 53px;
+  background-color: rgba(241, 130, 141,1);
+  border: 3px solid black;
+}
+
+.main:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 9px;
+  height: 4px;
+  width: 80px;
+  background-color: #15040b;
+}
+
+.label {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  left: 5px;
+  top: 14px;
+  background-color: #15040b;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.label {
+  content: '';
+}
+
+.input:checked + .label {
+  left: 70px;
+   position: absolute;
+}

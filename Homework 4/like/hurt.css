@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.like {
+  visibility: hidden;
+}
+
+.hurt {
+  color: grey;
+  text-decoration: none;
+  font-size: 100px;
+}
+
+.hurt:hover {
+  color: #079bd4;
+}
+
+.like:checked ~ .hurt {
+  color: rgba(240, 52, 52, 1);
+}
+ 
+.like:checked ~ .hurt:hover {
+  color: rgba(240, 52, 52, 0.7)
+ 

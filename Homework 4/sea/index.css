@@ -1,0 +1,9 @@
+.sea {
+	background-image: url(sun.png), url(sea.jpg), url(sky.jpg);
+	width: 98vw;
+	height: 97vh;
+    background-repeat: no-repeat;
+
+	background-size: 15%, 100%, 100%;
+	background-position: top left, bottom, top;
+}
