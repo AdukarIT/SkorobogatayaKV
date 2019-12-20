@@ -1,0 +1,12 @@
+.subzero {
+  background-image: url(subze.jpg);
+  background-repeat: no-repeat; 
+  width: 66px;
+  height: 135px;
+  transition: .3s steps(6);
+}
+
+ .subzero:hover {
+   background-position: -396px 0;
+ 
+ }
