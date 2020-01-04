@@ -20,12 +20,12 @@ body {
 }
 
 
-.logo > p {
+.logo__logo > p {
 	display: flex;
 	flex-direction: row;
 }
 
-.vk  {
+.logo__vk  {
 	display: flex;
 	justify-content: flex-start;
 	width: 13%;
@@ -33,24 +33,24 @@ body {
 	padding: 6px 0px;
 }
 
-.vk:active {
+.logo__vk:active {
 	padding: 5px 0px 6px 0px;
 }
 
-.empty {
+.logo__empty {
 	display: flex;
 	justify-content: space-between;
-	width: 25%;
+	width: 23%;
 }
 
-.item-search {
+.logo__item-search {
 	width: 20%;
 	padding: 7px 0px 7px 25px;
 }
 
-.search {
+.logo__search {
 	margin-right: 10px;
- 	width: 80%;
+ 	width: 70%;
  	height: 8px;
  	padding: 10px 27px;
     border: transparent;
@@ -62,7 +62,7 @@ body {
 	color:#c0cddb;
 }
 
- .search:focus {
+ .logo__search:focus {
  	background-color: white;
  }
  
@@ -70,7 +70,7 @@ body {
        color: #c0cddb;
  }
 
-.bell {
+.logo__bell {
 	width: 4%;
 	background-image: url(img/bell.png);
 	background-repeat: no-repeat;
@@ -78,11 +78,11 @@ body {
 	cursor: pointer;
 }
 
-.bell:hover {
+.logo__bell:hover {
 	background-color: #38699E;
 }
 
-.music {
+.logo__music {
     width: 4%;
 	background-image: url(img/music.png);
 	background-repeat: no-repeat;
@@ -90,11 +90,11 @@ body {
 	cursor: pointer;
 }
 
-.music:hover {
+.logo__music:hover {
 	background-color: #38699E;
 }
 
-.play {
+.logo__play {
  	width: 4%;
  	background-image: url(img/play.png);
 	background-repeat: no-repeat;
@@ -102,17 +102,17 @@ body {
 	cursor: pointer;
 }
 
-.play:hover {
+.logo__play:hover {
 	background-image: url(img/play2.png);
 	background-repeat: no-repeat;
 	background-position: 11px;
 }
 
-.empty__more {
-	width: 23%;
+.logo__empty__more {
+	width: 25%;
 }
 
-.name {
+.logo__name {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -124,21 +124,12 @@ body {
 	cursor: pointer;
 }
 
-.name:hover {
+.logo__name:hover {
 	background-color:#38699E; 
 }
 
-.angel {
+.logo__angel {
 	visibility: hidden;
-}
-
-label {
- cursor: pointer;
- padding-left: 0px;
-}
-
-.angel: checked + .label {
-	background-color: red;
 }
 
 .name__photo {
@@ -155,7 +146,7 @@ label {
 }
 
 .nothing {
-	width: 288px;
+	width: 270px;
 	height: 500px;
 }
 
@@ -173,7 +164,7 @@ label {
 }
 
 .items > div > img {
-  padding-right: 8px;
+     padding-right: 8px;
 }
 
 .items > div:hover {
@@ -193,7 +184,7 @@ label {
 
 .topic {
 	width: 600px;
-	height: 500px;
+	height: 510px;
 	
 	margin: 0px 10px;
 	background-color: white;
@@ -202,11 +193,9 @@ label {
 }
 
 .topic__icon{
-  display: flex;
-height: 65px;
-width: 170px;
-
-   
+    display: flex;
+	height: 65px;
+	width: 170px;  
 }
 
 .topic__icon > img {
@@ -222,17 +211,17 @@ width: 170px;
 }
 
 .topic__name {
-  margin-bottom: 11px;
-  font-size: 13px;
-  cursor: pointer;
+	margin-bottom: 11px;
+	font-size: 13px;
+	cursor: pointer;
 }
 
 .topic a {
 	text-decoration: none;
-
 }
+
 	.topic a:hover {
-		text-decoration: underline;
+	text-decoration: underline;
 	}
 
 .topic_main {
@@ -252,10 +241,43 @@ width: 170px;
 	width: 500px;
 }
 
-.public{
-font-size: 13px;
-color: #27446D;
-font-weight: bold;
+.topic_main__content div {
+	display: flex;
+	flex-direction: row;
+}
+.topic_main__content img {
+	justify-content: flex-start;
+	padding-right: 6px;
+	cursor: pointer;
+}
+
+.topic_main__items p {
+	display: flex;
+	flex-direction: row;
+	font-size: 15px;
+	
+	padding: 0px  15px 0px 10px;
+	cursor: pointer;
+}
+
+.topic_main__views {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 12px;
+	color: grey;
+}
+
+.topic_main__views span {
+	display: flex;
+	align-items:  center;
+	position: absolute;
+	transform: translate(-10px, -17px);
+}
+
+.public {
+	font-size: 13px;
+	color: #27446D;
+	font-weight: bold;
 }
 
 .time {
@@ -264,24 +286,72 @@ font-weight: bold;
 }
 
 .news {
-	height: 330px;
+	display: flex;
+	flex-direction: column;
+}
+
+.news__content {
+	height: 295px;
 	width:257px;
 	background-color: white;
 	border-radius: 5px;
+	padding: 10px 0px 10px 0px;
 }
 
-.news > div {
+.interesting {
+	margin-top: 20px;
+	width: 257px;
+	height: 40px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	background-image: url(img/fire.png);
+	background-repeat: no-repeat;
+	background-position: 11px;
+
+	border: transparent;
+	border-radius: 5px;
+	background-color: white;
+	font-size: 12.5px;
+}
+
+.news__sections, .news__sections__news {
 	display: flex;
 	flex-direction: column;
 	font-size: 12.5px;
 	padding: 6px 15px 9px 20px ;
-	margin: 7px 0px 4px 0px;
+	margin: 0px;
 	color:#436EAB;
 	cursor: pointer;
 }
 
-.news > div:hover {
+.news__sections__news {
+	background-color: rgba(204, 211, 234, 0.4);
+	color: black;
+	font-weight: bold;
+	border-left: 1.5px solid #436EAB;
+	background-image: url(img/plusik.png);
+	background-repeat: no-repeat;
+	background-position:225px; 
+}
 
+.news__sections__news:hover {
+	background-image: url(img/plus.png);
+	background-repeat: no-repeat;
+	background-position:225px;
+}
+
+.news__news {
+	color: grey;
+	font-size: 12.5px;
+	padding: 6px 15px 9px 35px ;
+	margin: 0px 0px 0px 0px;
+	cursor: pointer;
+}
+
+.news__content > div:hover {
 	background-color: rgba(204, 211, 234, 0.4);
 }
 
@@ -297,59 +367,32 @@ font-weight: bold;
 	width: 90%;
 }
 
-.interesting {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transform: translate(1007px, 340px);
-
-	background-image: url(img/fire.png);
-	background-repeat: no-repeat;
-	background-position: 11px;
-
-	border: transparent;
-	border-radius: 5px;
-	height: 35px;
-	width:224px;
-	background-color: white;
-
-	font-size: 12.5px;
-
-}
- .switch input {
+.checkbox {
  	 visibility: hidden;
- }
+}
 
 .switch {
- position: relative;
- left: 17px;
-  width: 27px;
-  height: 9px;
-  background-color: #c0cddb;
- cursor: pointer;
- border-radius: 10px;
+	 position: relative;
+	 left: 17px;
+	 width: 27px;
+	 height: 9px;
+	 background-color: #c0cddb;
+     cursor: pointer;
+	 border-radius: 10px;
 }
 
 .switch__play {
  position: absolute;
   height: 14px;
   width: 14px;
-
   top: -3px;
   background-color:white;
   border-radius: 20px;
   cursor: pointer;
- 
   border: 0.5px solid #c0cddb;
+  z-index: 5;
 }
 
-
-
-
-
-
-.input:checked + .switch__play {
+.checkbox:checked + .switch__play {
   left: 20px;
-   
 }
