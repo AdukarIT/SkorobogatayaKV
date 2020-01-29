@@ -81,9 +81,8 @@ for (let i = 2; i < 18; i++){
 	let m= x + y;
 	console.log(m); }
 
-// else {
-// 	console.log("Неправильне значение")
-// }
+//!!!!
+
 
 
 
