@@ -87,6 +87,15 @@ for (let i = 2; i < 18; i++){
 
 
 // 7 Номер
+// let x="#";
+// for (let i=1; i<9; i++) {
+// 	if ( i%2){
+// 		console.log (x+' '+x+' '+x+' '+x+' ');
+// 	}
+// 	else{
+// 	console.log (' '+x+' '+x+' '+x+' '+x);
+// 	}
+// }
 
 
 
